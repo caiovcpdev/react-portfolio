@@ -1,4 +1,5 @@
-import { useState } from 'react'
+"use client"; 
+
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {AiFillLinkedin} from 'react-icons/ai'
 import Image from "next/image"
@@ -12,24 +13,26 @@ import web3 from "../../public/web3.png";
 import web4 from "../../public/web4.png";
 import web5 from "../../public/web5.png";
 import web6 from "../../public/web6.png";
-export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+import { useState } from 'react'
 
+
+export default function Home() {
+const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className={darkMode ? "dark":''}>
-    <main className='bg-white px-10 md:px-20 lg:px-40'>
+    <div className={darkMode ? "dark" : ""}>
+    <main className='bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
       <section className="min-h-screen"> 
-        <nav className='py-10 mb-12 flex justify-between'>
-          <h1 className="font-burtons text-xl">developedbyed</h1>
+        <nav className='py-10 mb-12 flex justify-between dark:text-white'>
+          <h1 className="font-burtons text-xl">caiovcpdev</h1>
           <ul className='flex items-center'>
-            <li><BsFillMoonStarsFill  onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/></li>
+            <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-2xl'/></li>
             <li><a className=' bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a></li>
           </ul>
         </nav>
         <div className='text-center p-10'>
           <h2 className='text-5xl py-2 text-teal-600 md:text-6xl'>Caio Vincius</h2>
-          <h3 className='text-2xl py-2 md:text-3xl'>Developer.</h3>
-          <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Developer.</h3>
+          <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         </div>
         <div className='text-5xl flex justify-center py-3 text-gray-600 cursor-pointer'>
           <AiFillLinkedin/>
@@ -41,8 +44,8 @@ export default function Home() {
       {/*SECOND PAGE*/}
       <section>
         <div>
-        <h3 className="text-3xl py-1 ">Services I offer</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 ">
+        <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -50,14 +53,14 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 ">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
         </div>
         <div className='lg:flex gap-10'>
           {/*CARD ONE*/}
-          <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Image src={design} width={100} height={100}/>
             <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful Designs</h3>
             <p className="py-2">
@@ -69,7 +72,7 @@ export default function Home() {
             <p className="text-gray-800 py-1">Canva</p>
           </div>
           {/*CARD TWO*/}
-          <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Image src={code} width={100} height={100}/>
             <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful Designs</h3>
             <p className="py-2">
@@ -81,7 +84,7 @@ export default function Home() {
             <p className="text-gray-800 py-1">Canva</p>
           </div>
           {/*CARD THREE*/}
-          <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
             <Image src={consulting} width={100} height={100}/>
             <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful Designs</h3>
             <p className="py-2">
@@ -97,8 +100,8 @@ export default function Home() {
       {/*SECTION THREE*/}
       <section className='py-10'>
         <div>
-            <h3 className="text-3xl py-1 ">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 ">
+            <h3 className="text-3xl py-1 dark:text-white">Portofolio</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -106,7 +109,7 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 ">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
@@ -163,6 +166,6 @@ export default function Home() {
           </div>
       </section>
     </main>
-    </div>  
+    </div>
   )
 }
