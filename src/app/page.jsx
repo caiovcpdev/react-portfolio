@@ -6,11 +6,10 @@ import Image from "next/image"
 import deved from "../../public/dev-ed-wave.png"
 import design from "../../public/design.png"
 import code from "../../public/code.png";
-import consulting from "../../public/consulting.png";
-import web1 from "../../public/web1.png";
-import web2 from "../../public/web2.png";
-import web3 from "../../public/web3.png";
-import web4 from "../../public/web4.png";
+import web1 from "../../public/Client-Portfolio.jpeg";
+import web2 from "../../public/iFacturing.jpeg";
+import web3 from "../../public/Spotify-Clone.jpeg";
+import web4 from "../../public/E-Commerce.jpeg";
 import web5 from "../../public/web5.png";
 import web6 from "../../public/web6.png";
 import { useState } from 'react'
@@ -31,8 +30,8 @@ const [darkMode, setDarkMode] = useState(false);
         </nav>
         <div className='text-center p-10'>
           <h2 className='text-5xl py-2 text-teal-600 md:text-6xl'>Caio Vincius</h2>
-          <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Developer.</h3>
-          <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <h3 className='text-2xl py-2 md:text-3xl dark:text-white'>Desenvolvedor</h3>
+          <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-white'>Como desenvolvedor, meu objetivo principal é criar soluções de software para resolver problemas ou atender a necessidades de negócios. Isso geralmente envolve escrever código em uma ou mais linguagens de programação, depurar problemas de software e trabalhar com outros desenvolvedores para integrar o código em sistemas maiores.</p>
         </div>
         <div className='text-5xl flex justify-center py-3 text-gray-600 cursor-pointer'>
           <AiFillLinkedin/>
@@ -44,54 +43,36 @@ const [darkMode, setDarkMode] = useState(false);
       {/*SECOND PAGE*/}
       <section>
         <div>
-        <h3 className="text-3xl py-1 dark:text-white">Services I offer</h3>
+        <h3 className="text-3xl py-1 dark:text-white">Serviços oferecidos</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
+             Desde o inicio da minha jornada na area de tecnologia, tenho desenvolvido projetos voltados para expansão do meu conhecimento e outros destinados a minha startup <span className="text-teal-500">CODE COREX</span> ,
+              onde mantenho contato com pessoas competentes e talentosas do que fazem.
             </p>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              Ofereço marjoritariamente o serviço como <span className="text-teal-500">programador</span> mas tambem como <span className="text-teal-500">webdesigner</span>.
             </p>
         </div>
         <div className='lg:flex gap-10'>
           {/*CARD ONE*/}
           <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <Image src={design} width={100} height={100}/>
-            <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful Designs</h3>
+            <Image src={code} width={100} height={100}/>
+            <h3 className='text-lg font-medium pt-8 pb-2'>Códigos funcionais</h3>
             <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
+                Código limpo e bem organizado como manda o clean code!
             </p>
-            <h4 className='p-4 text-teal-600'>Design tools I use</h4>
-            <p className="text-gray-800 py-1">Figma</p>
-            <p className="text-gray-800 py-1">Canva</p>
+            <h4 className='p-4 text-teal-600'>Ferramentas usadas</h4>
+            <p className="text-gray-800 py-1">Visual Studio Code</p>
+            <p className="text-gray-800 py-1">JavaScript (ReactJS)</p>
+            <p className="text-gray-800 py-1">Git</p>
           </div>
           {/*CARD TWO*/}
           <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <Image src={code} width={100} height={100}/>
-            <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful Designs</h3>
+            <Image src={design} width={100} height={100}/>
+            <h3 className='text-lg font-medium pt-8 pb-2'>Web Design</h3>
             <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
+                Design bonito e pensado na experiência do usuário.
             </p>
-            <h4 className='p-4 text-teal-600'>Design tools I use</h4>
-            <p className="text-gray-800 py-1">Figma</p>
-            <p className="text-gray-800 py-1">Canva</p>
-          </div>
-          {/*CARD THREE*/}
-          <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-            <Image src={consulting} width={100} height={100}/>
-            <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful Designs</h3>
-            <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
-            </p>
-            <h4 className='p-4 text-teal-600'>Design tools I use</h4>
+            <h4 className='p-4 text-teal-600'>Ferramentas usadas</h4>
             <p className="text-gray-800 py-1">Figma</p>
             <p className="text-gray-800 py-1">Canva</p>
           </div>
@@ -101,18 +82,6 @@ const [darkMode, setDarkMode] = useState(false);
       <section className='py-10'>
         <div>
             <h3 className="text-3xl py-1 dark:text-white">Portofolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-white">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
-            </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
           <div className="basis-1/3 flex-1 ">
@@ -145,22 +114,6 @@ const [darkMode, setDarkMode] = useState(false);
                 width={"100%"}
                 height={"100%"}
                 src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                src={web6}
               />
             </div>
           </div>
